@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="tabBackgroundColor">#EEE</color>
     <color name="btnPublish">#FFC300</color>
+    <color name="grey">#868786</color>
 </resources>

@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".FavoriteFragment">
+    tools:context=".view.ui.FavoriteFragment">
 
-    <TextView
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardViewFavorite"
+        android:layout_gravity="top"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Favoritos"
-        android:textSize="30sp"
-        android:textAlignment="center"
-        android:gravity="center"
-        android:textColor="@color/black"/>
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="10dp">
+
+        <TextView
+            android:id="@+id/info_text"
+            android:text="Vivienda"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.cardview.widget.CardView>
 
 </FrameLayout>
+</layout>
