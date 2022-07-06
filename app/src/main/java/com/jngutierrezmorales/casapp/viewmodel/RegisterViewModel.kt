@@ -1,4 +1,10 @@
 package com.jngutierrezmorales.casapp.viewmodel
 
-class RegisterViewModel {
+import com.jngutierrezmorales.casapp.service.protocol.FirebaseServiceProtocol
+
+class RegisterViewModel : FirebaseServiceProtocol {
+
+    override suspend fun createAccount(email: String, password: String) {
+        super.createAccount(email, password)
+    }
 }

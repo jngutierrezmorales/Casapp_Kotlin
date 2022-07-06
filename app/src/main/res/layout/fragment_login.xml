@@ -24,7 +24,7 @@
 
     <Button
         android:id="@+id/btnLoginToMain"
-        android:layout_width="157dp"
+        android:layout_width="150dp"
         android:layout_height="47dp"
         android:text="Acceder"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -36,7 +36,7 @@
 
     <Button
         android:id="@+id/btnLoginToRegister"
-        android:layout_width="wrap_content"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:text="Crear usuario"
         app:layout_constraintBottom_toBottomOf="parent"

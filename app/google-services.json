@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "397602833384",
+    "project_id": "casapp-kotlin",
+    "storage_bucket": "casapp-kotlin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:397602833384:android:a0669418db9cfc8ca75a5d",
+        "android_client_info": {
+          "package_name": "com.jngutierrezmorales.casapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "397602833384-5nnhbv5c1drgdtvc6rjtm75bti31cai9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsG90xIcMpzdt_gxUbA4FJWrXIhjf--ds"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "397602833384-5nnhbv5c1drgdtvc6rjtm75bti31cai9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

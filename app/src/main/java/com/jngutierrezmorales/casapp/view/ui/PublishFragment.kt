@@ -24,6 +24,8 @@ class PublishFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        //(activity as AppCompatActivity).supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         binding.toolBarPublish.setOnMenuItemClickListener {
             when (it.itemId) {
                 R.id.action_return -> {
@@ -33,6 +35,10 @@ class PublishFragment : Fragment() {
                 // required official documentation
                 else -> false
             }
+        }
+
+        binding.btnPublishNew.setOnClickListener {
+            it.findNavController().navigate(R.id.action_publishFragment_to_mainFragment)
         }
     }
 }
