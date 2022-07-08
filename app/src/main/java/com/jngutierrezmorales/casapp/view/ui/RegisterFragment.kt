@@ -22,7 +22,6 @@ import org.jetbrains.annotations.TestOnly
 class RegisterFragment : Fragment(R.layout.fragment_register) {
 
     private lateinit var binding: FragmentRegisterBinding
-    private lateinit var testOnly: TestOnly
 
     private val registerViewModel: RegisterViewModel by viewModels {
         val repository = FirebaseRepository()
