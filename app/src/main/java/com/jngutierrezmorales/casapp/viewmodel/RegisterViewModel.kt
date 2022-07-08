@@ -1,10 +1,15 @@
 package com.jngutierrezmorales.casapp.viewmodel
 
-import com.jngutierrezmorales.casapp.service.protocol.FirebaseServiceProtocol
+import androidx.lifecycle.*
+import com.jngutierrezmorales.casapp.repository.FirebaseRepository
 
-class RegisterViewModel : FirebaseServiceProtocol {
+class RegisterViewModel(private val firebaseRepository: FirebaseRepository) : ViewModel() {
+    suspend fun createAccount(email: String, password: String) = firebaseRepository.createAccount(email, password)
+}
 
-    override suspend fun createAccount(email: String, password: String) {
-        super.createAccount(email, password)
+@Suppress("UNCHECKED_CAST")
+class RegisterViewModelFactory(private val firebaseRepository: FirebaseRepository) : ViewModelProvider.Factory {
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
+        return RegisterViewModel(firebaseRepository) as T
     }
 }

@@ -10,7 +10,7 @@ import androidx.navigation.findNavController
 import com.jngutierrezmorales.casapp.R
 import com.jngutierrezmorales.casapp.databinding.FragmentFavoriteBinding
 
-class FavoriteFragment : Fragment() {
+class FavoriteFragment : Fragment(R.layout.fragment_favorite) {
 
     private lateinit var binding: FragmentFavoriteBinding
 

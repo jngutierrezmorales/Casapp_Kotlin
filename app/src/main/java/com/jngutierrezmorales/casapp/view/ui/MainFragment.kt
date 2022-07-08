@@ -12,7 +12,7 @@ import com.jngutierrezmorales.casapp.R
 import com.jngutierrezmorales.casapp.databinding.FragmentMainBinding
 import com.jngutierrezmorales.casapp.view.adapter.TabPageAdapter
 
-class MainFragment : Fragment() {
+class MainFragment : Fragment(R.layout.fragment_main) {
 
     private lateinit var binding: FragmentMainBinding
 

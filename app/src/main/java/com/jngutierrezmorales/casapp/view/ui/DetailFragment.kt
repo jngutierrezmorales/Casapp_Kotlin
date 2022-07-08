@@ -14,7 +14,7 @@ import androidx.navigation.fragment.findNavController
 import com.jngutierrezmorales.casapp.R
 import com.jngutierrezmorales.casapp.databinding.FragmentDetailBinding
 
-class DetailFragment : Fragment() {
+class DetailFragment : Fragment(R.layout.fragment_detail) {
 
     private lateinit var binding: FragmentDetailBinding
 
@@ -28,6 +28,10 @@ class DetailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         //(activity as AppCompatActivity).supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+//        binding = FragmentDetailBinding.bind(view).apply {
+//            toolBarDetail?.title = "Volver"
+//        }
 
         binding.toolBarDetail.setOnMenuItemClickListener {
             when (it.itemId) {

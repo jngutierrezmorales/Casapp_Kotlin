@@ -11,7 +11,7 @@ import androidx.navigation.fragment.findNavController
 import com.jngutierrezmorales.casapp.R
 import com.jngutierrezmorales.casapp.databinding.FragmentPublishBinding
 
-class PublishFragment : Fragment() {
+class PublishFragment : Fragment(R.layout.fragment_publish) {
 
     private lateinit var binding: FragmentPublishBinding
 

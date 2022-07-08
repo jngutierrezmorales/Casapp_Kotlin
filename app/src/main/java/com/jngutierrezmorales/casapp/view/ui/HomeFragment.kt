@@ -10,7 +10,7 @@ import androidx.navigation.findNavController
 import com.jngutierrezmorales.casapp.R
 import com.jngutierrezmorales.casapp.databinding.FragmentHomeBinding
 
-class HomeFragment : Fragment() {
+class HomeFragment : Fragment(R.layout.fragment_home) {
 
     private lateinit var binding: FragmentHomeBinding
 
