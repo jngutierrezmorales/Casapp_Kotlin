@@ -17,10 +17,12 @@ import com.jngutierrezmorales.casapp.viewmodel.RegisterViewModel
 import com.jngutierrezmorales.casapp.viewmodel.RegisterViewModelFactory
 import kotlinx.android.synthetic.main.fragment_register.*
 import kotlinx.coroutines.*
+import org.jetbrains.annotations.TestOnly
 
 class RegisterFragment : Fragment(R.layout.fragment_register) {
 
     private lateinit var binding: FragmentRegisterBinding
+    private lateinit var testOnly: TestOnly
 
     private val registerViewModel: RegisterViewModel by viewModels {
         val repository = FirebaseRepository()
