@@ -1,1 +1,1 @@
-Android app using Kotlin with MVVM architecture and implementing dependency injection with Koin.
+Android native app using Kotlin with MVVM architecture and implementing dependency injection with Koin.
